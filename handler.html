@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IP Address Receiver</title>
+</head>
+<body>
+  <h1>IP Address Receiver</h1>
+  <script>
+    // Server-side code to process the incoming request
+    if (window.location.pathname === '/endpoint' && window.location.search.includes('ipAddress=')) {
+      const ipAddress = window.location.search.split('=')[1];
+      console.log('Received IP Address:', ipAddress);
+      // Add your server-side logic here to further process the IP address
+    }
+  </script>
+</body>
+</html>
